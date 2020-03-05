@@ -127,36 +127,3 @@ def draw_pie_chart():
                 explode=explode)
     pyplot.tight_layout()
     pyplot.show()
-def draw_scatter_chart():
-    x = [1, 4, 5, 6, 7, 9, 12, 14, 17]
-    y = [1, 4, 5, 6, 7, 9, 12, 14, 17]
-    colors = [1, 4, 5, 6, 7, 9, 12, 14, 0]
-    point_sizes = [20, 50, 70, 60, 55, 66, 80, 90, 70]
-    pyplot.scatter(x, y,
-                   s=point_sizes,
-                   c=colors,
-                   edgecolors='red',
-                   linewidths=1                   
-                   )
-    pyplot.xlabel("x")
-    pyplot.xlabel("y")
-    colorbar = pyplot.colorbar()
-    colorbar.set_label("Scatter example")
-    pyplot.show()
-def draw_stack_plot():
-    x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y2 = [2, 4, 3, 6.1, 7, 3.2, 4, 6.2 , 6, 8]
-    y3 = [1.4, 2.5, 4, 3, 9, 10, 12, 13, 12, 14]
-    colors = ["#00F5EA", "#FF3B30", "#04DE71"]
-    players = ["Player 1", "Player 2", "Player 3"]
-    pyplot.stackplot(x, y1, y2, y3,
-                    labels=players,
-                    colors=colors
-                    )
-    pyplot.title("Player's point / minute")
-    pyplot.xlabel("Minutes")
-    pyplot.ylabel("Points")
-    pyplot.legend(loc=(0.1, 0.8)) 
-
-    pyplot.show()

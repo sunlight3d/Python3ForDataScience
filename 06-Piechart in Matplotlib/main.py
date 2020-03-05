@@ -1,6 +1,5 @@
 '''How to install matplotlib ?'''
 from graphs import draw_multiline, draw_bar, draw_histogram, draw_line_plot, draw_pie_chart
-from graphs import draw_scatter_chart, draw_stack_plot
 from CsvReader import CsvReader
 # draw_multiline()
 # csv_reader = CsvReader("movies.csv")
@@ -10,6 +9,4 @@ from CsvReader import CsvReader
 # draw_bar()
 #draw_histogram()
 #draw_line_plot()
-# draw_pie_chart()
-#draw_scatter_chart()
-draw_stack_plot()
+draw_pie_chart()
